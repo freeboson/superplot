@@ -51,11 +51,15 @@ def Appearance(usetex):
     # If it isn't, we issue a warning and fall back to
     # mathtext. Otherwise we enable Tex for either 
     # math only or all text as specified.
-    if usetex != "none":
+    
+    if usetex == "none":
+        rc('text', usetex=False)
+    else:
         # Check if LaTeX is available.
         try:
             subprocess.call(["latex", "-version"])
         except OSError as e:
+            rc('text', usetex=False)
             if e.errno == os.errno.ENOENT:
                 warnings.warn(
                     "Cannot use LaTeX fonts. "
