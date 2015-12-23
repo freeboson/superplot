@@ -76,17 +76,8 @@ plot_options:
     
     plot_title: 'Fowlie (2014)'
 
-    # Size in inches.
-    size: [8, 8]
-
     # For theoretical error on delta chi-squared plots.
     tau: 2
-    
-    # Whether to use LaTeX.
-    # - all: use LaTeX for math and text
-    # - math: use LaTeX for math only
-    # - none: do not use LaTeX at all
-    use_tex: 'all'
 
 
 

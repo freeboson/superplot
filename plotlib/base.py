@@ -66,13 +66,13 @@ class Plot(object):
         # Returns the figure and axes.
         opt = self.plot_options
 
-        fig = plt.figure(figsize=opt.size)  # Size in inches.
+        fig = plt.figure()
         ax = fig.add_subplot(1, 1, 1)
 
         pm.plot_ticks(opt.xticks, opt.yticks, ax)
         pm.plot_labels(opt.xlabel, opt.ylabel, opt.plot_title)
         pm.plot_limits(ax, opt.plot_limits)
-        pm.appearance(opt.use_tex)
+        pm.appearance()
 
         return fig, ax
 

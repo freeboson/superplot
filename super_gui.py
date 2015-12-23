@@ -474,13 +474,11 @@ class GUIControl:
                 tau=default("tau"),
                 alpha=default("alpha"),
 
-                size=default("size"),
                 xlabel=self.labels[self.xindex],
                 ylabel=self.labels[self.yindex],
                 zlabel=self.labels[self.zindex],
                 plot_title=self.plottitle.get_text(),
-                leg_title=self.legtitle.get_text(),
-                use_tex=default("use_tex")
+                leg_title=self.legtitle.get_text()
         )
 
         # Fetch the class for the selected plot type
