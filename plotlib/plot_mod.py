@@ -47,6 +47,7 @@ def appearance(use_tex):
     # If it isn't, we issue a warning and fall back to
     # mathtext. Otherwise we enable Tex for either 
     # math only or all text as specified.
+
     if use_tex == "none":
         rc('text', usetex=False)
     else:
